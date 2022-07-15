@@ -11,6 +11,9 @@
 		B77B2D5E2881A8CC00C0EAB7 /* Xarxa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77B2D532881A8CB00C0EAB7 /* Xarxa.framework */; };
 		B77B2D632881A8CC00C0EAB7 /* XarxaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77B2D622881A8CC00C0EAB7 /* XarxaTests.swift */; };
 		B77B2D642881A8CC00C0EAB7 /* Xarxa.h in Headers */ = {isa = PBXBuildFile; fileRef = B77B2D562881A8CB00C0EAB7 /* Xarxa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B77B2D6F2881A93E00C0EAB7 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77B2D6E2881A93E00C0EAB7 /* NetworkService.swift */; };
+		B77B2D712881AAC600C0EAB7 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77B2D702881AAC600C0EAB7 /* Service.swift */; };
+		B77B2D732881AB2000C0EAB7 /* FetchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77B2D722881AB2000C0EAB7 /* FetchService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +32,9 @@
 		B77B2D572881A8CB00C0EAB7 /* Xarxa.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Xarxa.docc; sourceTree = "<group>"; };
 		B77B2D5D2881A8CC00C0EAB7 /* XarxaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XarxaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B77B2D622881A8CC00C0EAB7 /* XarxaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XarxaTests.swift; sourceTree = "<group>"; };
+		B77B2D6E2881A93E00C0EAB7 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		B77B2D702881AAC600C0EAB7 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		B77B2D722881AB2000C0EAB7 /* FetchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,10 @@
 		B77B2D552881A8CB00C0EAB7 /* Xarxa */ = {
 			isa = PBXGroup;
 			children = (
+				B77B2D702881AAC600C0EAB7 /* Service.swift */,
+				B77B2D6E2881A93E00C0EAB7 /* NetworkService.swift */,
+				B77B2D722881AB2000C0EAB7 /* FetchService.swift */,
+				B77B2D6D2881A90D00C0EAB7 /* Base */,
 				B77B2D562881A8CB00C0EAB7 /* Xarxa.h */,
 				B77B2D572881A8CB00C0EAB7 /* Xarxa.docc */,
 			);
@@ -83,6 +93,13 @@
 				B77B2D622881A8CC00C0EAB7 /* XarxaTests.swift */,
 			);
 			path = XarxaTests;
+			sourceTree = "<group>";
+		};
+		B77B2D6D2881A90D00C0EAB7 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +211,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B77B2D732881AB2000C0EAB7 /* FetchService.swift in Sources */,
+				B77B2D6F2881A93E00C0EAB7 /* NetworkService.swift in Sources */,
 				B77B2D582881A8CB00C0EAB7 /* Xarxa.docc in Sources */,
+				B77B2D712881AAC600C0EAB7 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +383,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Debug;
 		};
@@ -391,13 +411,14 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,6";
 			};
 			name = Release;
 		};
 		B77B2D6B2881A8CC00C0EAB7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N74TV576H8;
@@ -414,6 +435,7 @@
 		B77B2D6C2881A8CC00C0EAB7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = N74TV576H8;
